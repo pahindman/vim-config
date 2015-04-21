@@ -1,0 +1,15 @@
+*
+!/.gitignore.d
+!/.gitignore.d/vim-config
+!/.gvimrc
+!/.vim
+!/.vim/colors
+!/.vim/colors/blackbeauty.vim
+!/.vim/colors/solarized.vim
+!/.vim/ftdetect
+!/.vim/ftdetect/ipp.vim
+!/.vim/plugin
+!/.vim/plugin/perforceBlame.vim
+!/.vimrc
+!/README.md
+!/UNLICENSE
