@@ -4,16 +4,6 @@
 
 set nocompatible
 
-" Only do this for Vim version 5.0 and later.
-if version >= 500
-
-   if version >= 600
-      " Bail out early if for some reason we are using 'easy vim'
-      if v:progname =~? "evim"
-         finish
-      endif
-   endif
-
 
    " Set window look-and-feel options {{{
 
@@ -282,7 +272,5 @@ if version >= 500
    hi link MBEVisibleChanged        WarningMsg
    hi      MBEVisibleChangedActive  term=standout ctermfg=Red ctermbg=Grey guifg=Red guibg=Grey
    "}}}
-
-endif
 
 " vim:ft=vim:fdm=marker:ff=unix
