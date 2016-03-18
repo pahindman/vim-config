@@ -11,6 +11,8 @@ endif
 try
    call plug#begin()
 
+   Plug 'altercation/vim-colors-solarized'
+   Plug 'BlackBeauty'
    Plug 'tpope/vim-sensible'
 
    call plug#end()
