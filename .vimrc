@@ -8,6 +8,16 @@ if has('win32') || has('win64')
     set rtp^=~/.vim
 endif
 
+try
+   call plug#begin()
+
+   Plug 'tpope/vim-sensible'
+
+   call plug#end()
+catch
+   echom "Couldn't use Vim-Plug, install it?"
+endtry
+
 " Auto-reload .[g]vimrc
 augroup reload_vimrc " {
     autocmd!
