@@ -13,6 +13,7 @@ try
 
    Plug 'altercation/vim-colors-solarized'
    Plug 'BlackBeauty'
+   Plug 'ctrlpvim/ctrlp.vim'
    Plug 'tpope/vim-sensible'
 
    call plug#end()
@@ -26,6 +27,9 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
     autocmd BufWritePost $MYGVIMRC source $MYGVIMRC
 augroup END " }
+
+let g:ctrlp_root_markers = ['package']
+let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
 
    " Set window look-and-feel options {{{
 
