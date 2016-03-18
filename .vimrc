@@ -272,8 +272,8 @@ if version >= 500
    let g:miniBufExplTabWrap = 1
    let g:miniBufExplorerDebugMode  = 3
    let g:miniBufExplorerDebugLevel = 0
-   nnoremap <silent> <xF3> :TMiniBufExplorer<CR>
-   nnoremap <silent> <F3>  :TMiniBufExplorer<CR>
+   nnoremap <silent> <xF3> :MBEToggle<CR>
+   nnoremap <silent> <F3>  :MBEToggle<CR>
 
    hi link MBENormal                Normal
    hi link MBEChanged               WarningMsg
