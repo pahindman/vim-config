@@ -14,6 +14,7 @@ try
    Plug 'altercation/vim-colors-solarized'
    Plug 'BlackBeauty'
    Plug 'ctrlpvim/ctrlp.vim'
+   Plug 'terryma/vim-multiple-cursors'
    Plug 'tpope/vim-abolish'
    Plug 'tpope/vim-dispatch'
    Plug 'tpope/vim-fugitive'
