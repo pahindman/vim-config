@@ -4,6 +4,12 @@
 
 set nocompatible
 
+" Auto-reload .[g]vimrc
+augroup reload_vimrc " {
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+    autocmd BufWritePost $MYGVIMRC source $MYGVIMRC
+augroup END " }
 
    " Set window look-and-feel options {{{
 
