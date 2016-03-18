@@ -4,6 +4,10 @@
 
 set nocompatible
 
+if has('win32') || has('win64')
+    set rtp^=~/.vim
+endif
+
 " Auto-reload .[g]vimrc
 augroup reload_vimrc " {
     autocmd!
