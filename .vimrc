@@ -14,7 +14,12 @@ try
    Plug 'altercation/vim-colors-solarized'
    Plug 'BlackBeauty'
    Plug 'ctrlpvim/ctrlp.vim'
+   Plug 'tpope/vim-abolish'
+   Plug 'tpope/vim-dispatch'
+   Plug 'tpope/vim-fugitive'
+   Plug 'tpope/vim-repeat'
    Plug 'tpope/vim-sensible'
+   Plug 'tpope/vim-surround'
 
    call plug#end()
 catch
