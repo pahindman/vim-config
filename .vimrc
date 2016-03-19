@@ -224,7 +224,7 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
 
    " For now only use solarized on Linux and MacOS X - on Windows with the
    " default color mappings it looks really ugly
-   if has("unix") || has("macunix")
+   if has("unix") && !has("win32unix") || has("macunix")
       silent! colorscheme solarized
    endif
    syntax enable
