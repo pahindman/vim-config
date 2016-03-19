@@ -41,10 +41,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
 
    " Set window look-and-feel options {{{
 
-   " Always show a status line for the window
-   set laststatus=2
-   " Put the ruler info in status line (line #, column #, and file %)
-   set ruler
    " Show information about commands that are in the process of being entered
    " - useful visual feedback for complex commands, and for Visual mode info
    set showcmd
@@ -58,11 +54,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    set splitbelow
    " Highlight the current line
    set cursorline
-   " Number of lines of context to keep below (or above) the cursor when
-   " scrolling down (or up).
-   "set scrolloff=5
-   "set sidescroll=5
-   "set sidescrolloff=5
 
    "}}}
 
@@ -78,14 +69,9 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    " When shifting lines L or R (e.g. using '<' or '>'), round to the nearest
    " 'shiftwidth' multiple
    set shiftround
-   set smarttab
    set formatoptions+=cql2
    set textwidth=78
 
-   " Automatically indent when typing a new line - also useful when formatting
-   " blocks of text, e.g. with 'gq'.  Overridden by smartindent / cindent in
-   " many contexts (TODO: delete - superceded by cindent?)
-   set autoindent
    " Set smartindent feature (TODO: delete - superceded by cindent?)
    set smartindent
 
@@ -99,11 +85,8 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
 
    " Set miscellaneous options {{{
 
-   " Allow backspacing over everything in insert mode
-   set backspace=indent,eol,start
    " Keep buffer loaded but 'hidden' when it is not visible in any windows
    set hidden
-   set history=100
 
    " By default, ignore case when searching
    set ignorecase
@@ -111,47 +94,15 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    set smartcase
    " Highlight the search results
    set hlsearch
-   " Show search results as the pattern is being typed
-   set incsearch
 
    " use clipboard as the * register
    set clipboard=autoselect
-
-   " setting wildchar expansion
-   set wildmenu
-
-   " Set Exuberant CTAGS file locations
-   set tags=tags;
 
    "}}}
 
 
    " Set global key mappings {{{
    mapclear
-
-   " Make p in Visual mode replace the selected text with the "" register.
-   vnoremap p <Esc>:let current_reg = @"<CR>gvs<C-R>=current_reg<CR><Esc>
-
-   " Keys to move around to different windows
-   map <Esc>l l
-   map <Esc>h h
-   map <Esc>k k
-   map <Esc>j j
-
-   " Keys to switch which buffer is shown in current window
-   map <Esc><Right> :bnext<CR>
-   map <Esc><Left>  :bprevious<CR>
-   "map <Esc><Up>    :brewind<CR>
-   "map <Esc><Down>  :blast<CR>
-
-   map Ν :bnext<CR>       " <M-Right>
-   map Λ :bprevious<CR>   " <M-Left>
-   "map Θ :brewind<CR>     " <M-Up>
-   "map Π :blast<CR>       " <M-Down>
-
-   " Keys to move to the next/previous error in a list of errors
-   map <Esc>n :cn<CR>
-   map <Esc>p :cp<CR>
 
    " Keys to grep for the word under cursor
    map <Esc>8 :grep -r <cword> *<CR>
@@ -165,9 +116,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    nmap ,ps :!p4 sync "%"<CR>:e!<CR>
    nmap ,pu :!p4 submit<CR>:e!<CR>
    nmap ,pb :call PerforceBlame()
-
-   " Opening a Vim Explorer Window
-   nnoremap <Esc>e :Exp<CR>
 
    " easy editing
    if has("unix") || has("macunix")
@@ -249,7 +197,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    " Set syntax highlighting options {{{
    syntax clear
    set background=dark
-   syntax enable
    "}}}
 
 
