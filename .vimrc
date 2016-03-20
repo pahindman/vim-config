@@ -254,4 +254,4 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    hi      MBEVisibleChangedActive  term=standout ctermfg=Red ctermbg=Grey guifg=Red guibg=Grey
    "}}}
 
-" vim:ft=vim:fdm=marker:ff=unix
+" vim:ft=vim:fdm=marker

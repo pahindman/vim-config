@@ -32,4 +32,4 @@ endif
 
 "}}}
 
-" vim:ft=vim:fdm=marker:ff=unix
+" vim:ft=vim:fdm=marker
