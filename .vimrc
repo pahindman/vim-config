@@ -147,14 +147,12 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    if has("unix") || has("macunix")
       set viminfo='32,n/tmp/viminfo
       set shell=/bin/bash
-      set grepprg=grep\ -n
       set directory=/tmp
    else
       set viminfo='32,n$TMP/viminfo
       " I found that in order for the perforce plugin to work right, this
       " needs to be the shell...
       set shell=$windir\system32\cmd.exe
-      set grepprg=c:\tools\grep.exe\ -n
       set directory=$TMP
       source $VIMRUNTIME/mswin.vim  " See :help mswin.vim
    endif
