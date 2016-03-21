@@ -21,6 +21,7 @@ try
    Plug 'tpope/vim-repeat'
    Plug 'tpope/vim-sensible'
    Plug 'tpope/vim-surround'
+   Plug 'tpope/vim-unimpaired'
    Plug 'vim-airline/vim-airline'
    Plug 'weynhamz/vim-plugin-minibufexpl'
 
