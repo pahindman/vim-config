@@ -73,9 +73,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    set formatoptions+=cql2
    set textwidth=78
 
-   " Set smartindent feature (TODO: delete - superceded by cindent?)
-   set smartindent
-
    " Automatic indenting for C-like languages
    set cindent
    set cino=>s,e0,n0,f0,{0,}0,^0,:s,=s,ps,t0,c3,+s,(s,us,)20,*30,gs,hs
