@@ -216,7 +216,7 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    hi Directory	  term=bold  cterm=bold  ctermfg=brown	guifg=Red
 
    " Try colorschemes in reverse order of preference
-   silent! colorscheme BlackBeauty
+   silent! colorscheme blackbeauty
 
    " For now only use solarized on Linux and MacOS X - on Windows with the
    " default color mappings it looks really ugly
