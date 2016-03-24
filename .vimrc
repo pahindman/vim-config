@@ -144,22 +144,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    "}}}
 
 
-   " Set platform specific shell options {{{
-   if has("unix") || has("macunix")
-      set viminfo='32,n/tmp/viminfo
-      set shell=/bin/bash
-      set directory=/tmp
-   else
-      set viminfo='32,n$TMP/viminfo
-      " I found that in order for the perforce plugin to work right, this
-      " needs to be the shell...
-      set shell=$windir\system32\cmd.exe
-      set directory=$TMP
-      source $VIMRUNTIME/mswin.vim  " See :help mswin.vim
-   endif
-   "}}}
-
-
    " Set autocmd options {{{
    if has("autocmd")
       " Remove all autocommands in case this file is sourced
