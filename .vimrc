@@ -96,6 +96,7 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    " use clipboard as the * register
    set clipboard=autoselect
 
+   set grepprg=grep\ -n
    "}}}
 
 
