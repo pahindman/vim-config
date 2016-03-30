@@ -70,7 +70,7 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    " When shifting lines L or R (e.g. using '<' or '>'), round to the nearest
    " 'shiftwidth' multiple
    set shiftround
-   set formatoptions+=cql2
+   set formatoptions+=cqlnj
    set textwidth=78
 
    " Automatic indenting for C-like languages
