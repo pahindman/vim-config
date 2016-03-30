@@ -73,10 +73,14 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    set formatoptions+=cqlnj
    set textwidth=78
 
-   " Automatic indenting for C-like languages
-   set cindent
-   set cino=>s,e0,n0,f0,{0,}0,^0,:s,=s,ps,t0,c3,+s,(s,us,)20,*30,gs,hs
-   set cinkeys=0{,0},:,!^F,o,O,e
+   " Options for cindent
+   " Don't indent a return type that is on its own line
+   set cinoptions+=t0
+   " Make lines inside unclosed parenthesis line up with the character after
+   " the opening parenthesis
+   set cinoptions+=(0
+   " Don't force #words to start in first column
+   set cinkeys-=0#
 
    "}}}
 
