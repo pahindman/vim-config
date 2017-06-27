@@ -12,7 +12,7 @@ try
    call plug#begin()
 
    Plug 'altercation/vim-colors-solarized'
-   Plug 'BlackBeauty'
+   Plug 'vim-scripts/BlackBeauty'
    Plug 'ctrlpvim/ctrlp.vim'
    Plug 'terryma/vim-multiple-cursors'
    Plug 'tpope/vim-abolish'
