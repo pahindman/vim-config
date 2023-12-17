@@ -21,6 +21,7 @@ try
    Plug 'vim-scripts/BlackBeauty'
    Plug 'ctrlpvim/ctrlp.vim'
    Plug 'terryma/vim-multiple-cursors'
+   Plug 'github/copilot.vim'
    Plug 'tpope/vim-abolish'
    Plug 'tpope/vim-dispatch'
    Plug 'tpope/vim-fugitive'
@@ -104,7 +105,7 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    set hlsearch
 
    " use clipboard as the * register
-   set clipboard=autoselect
+   set clipboard=unnamedplus
 
    set grepprg=grep\ -n
    "}}}
