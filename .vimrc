@@ -217,9 +217,9 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    " Try colorschemes in reverse order of preference
    silent! colorscheme blackbeauty
 
-   " For now only use solarized on Linux and MacOS X - on Windows with the
+   " For now only use solarized on MacOS X - on Windows and Linux with the
    " default color mappings it looks really ugly
-   if has("unix") && !has("win32unix") || has("macunix")
+   if has("macunix")
       silent! colorscheme solarized
    endif
    syntax enable
