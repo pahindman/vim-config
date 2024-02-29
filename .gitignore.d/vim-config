@@ -9,7 +9,6 @@
 !/.vim/ftdetect
 !/.vim/ftdetect/ipp.vim
 !/.vim/plugin
-!/.vim/plugin/perforceBlame.vim
 !/.vimrc
 !/README.md
 !/UNLICENSE

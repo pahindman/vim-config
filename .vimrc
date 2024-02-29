@@ -121,15 +121,6 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    map <Leader>8 :grep -r <cword> *<CR>
    map <Leader><Leader>8 :grep -r -w <cword> *<CR>
 
-   " perforce stuff
-   nmap <Leader>pl :!p4 login<CR>
-   nmap <Leader>pa :!p4 add "%"<CR>
-   nmap <Leader>pe :!p4 edit "%"<CR>:e!<CR>
-   nmap <Leader>pr :!p4 revert "%"<CR>:e!<CR>
-   nmap <Leader>ps :!p4 sync "%"<CR>:e!<CR>
-   nmap <Leader>pu :!p4 submit<CR>:e!<CR>
-   nmap <Leader>pb :call PerforceBlame()
-
    " easy editing
    if has("unix") || has("macunix")
       map <Leader>e :e <C-R>=expand("%:p:h")."/"<CR>
