@@ -19,8 +19,8 @@ try
 
    Plug 'altercation/vim-colors-solarized'
    Plug 'ctrlpvim/ctrlp.vim'
-   Plug 'terryma/vim-multiple-cursors'
    Plug 'github/copilot.vim'
+   Plug 'mg979/vim-visual-multi', {'branch': 'master'}
    Plug 'tpope/vim-abolish'
    Plug 'tpope/vim-dispatch'
    Plug 'tpope/vim-fugitive'
