@@ -18,7 +18,6 @@ try
    call plug#begin()
 
    Plug 'altercation/vim-colors-solarized'
-   Plug 'vim-scripts/BlackBeauty'
    Plug 'ctrlpvim/ctrlp.vim'
    Plug 'terryma/vim-multiple-cursors'
    Plug 'github/copilot.vim'
@@ -30,6 +29,7 @@ try
    Plug 'tpope/vim-surround'
    Plug 'tpope/vim-unimpaired'
    Plug 'vim-airline/vim-airline'
+   Plug 'vim-scripts/BlackBeauty'
    Plug 'weynhamz/vim-plugin-minibufexpl'
 
    call plug#end()
