@@ -45,9 +45,6 @@ augroup reload_vimrc " {
     autocmd BufWritePost $MYGVIMRC source $MYGVIMRC
 augroup END " }
 
-let g:ctrlp_root_markers = ['package']
-let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
-
    " Set window look-and-feel options {{{
 
    " Show information about commands that are in the process of being entered
