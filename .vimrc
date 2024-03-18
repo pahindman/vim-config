@@ -19,7 +19,6 @@ try
 
    Plug 'altercation/vim-colors-solarized'
    Plug 'ctrlpvim/ctrlp.vim'
-   Plug 'github/copilot.vim'
    Plug 'junegunn/vim-plug'
    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
    Plug 'rust-lang/rust.vim'
@@ -33,6 +32,10 @@ try
    Plug 'vim-airline/vim-airline'
    Plug 'vim-scripts/BlackBeauty'
    Plug 'weynhamz/vim-plugin-minibufexpl'
+
+   if has('nvim')
+      Plug 'github/copilot.vim'
+   endif
 
    call plug#end()
 catch
