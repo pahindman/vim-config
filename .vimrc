@@ -35,6 +35,7 @@ try
 
    if has('nvim')
       Plug 'github/copilot.vim'
+      Plug 'neovim/nvim-lspconfig'
    endif
 
    call plug#end()
