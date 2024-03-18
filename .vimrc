@@ -20,6 +20,7 @@ try
    Plug 'altercation/vim-colors-solarized'
    Plug 'ctrlpvim/ctrlp.vim'
    Plug 'github/copilot.vim'
+   Plug 'junegunn/vim-plug'
    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
    Plug 'rust-lang/rust.vim'
    Plug 'tpope/vim-abolish'
