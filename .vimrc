@@ -241,4 +241,9 @@ let g:ctrlp_custom_ignore = '\v[\/]objects[\/]'
    hi      MBEVisibleChangedActive  term=standout ctermfg=Red ctermbg=Grey guifg=Red guibg=Grey
    "}}}
 
+
+   " Configure rust plugin {{{
+	let g:rustfmt_autosave = 1
+   "}}}
+
 " vim:ft=vim:fdm=marker
