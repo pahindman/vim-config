@@ -33,8 +33,10 @@ try
    Plug 'vim-scripts/BlackBeauty'
    Plug 'weynhamz/vim-plugin-minibufexpl'
 
-   if has('nvim')
+   if has('nvim-0.6') || has('patch-9.0.0185')
       Plug 'github/copilot.vim'
+   endif
+   if has('nvim-0.8')
       Plug 'neovim/nvim-lspconfig'
    endif
 
