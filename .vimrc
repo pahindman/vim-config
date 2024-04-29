@@ -85,17 +85,19 @@ endfunction
 
    " Set tab & indent options {{{
 
-   " Tabs count for 3 spaces
-   set tabstop=3
+   " Tabs count for 4 spaces
+   set tabstop=4
    " Insert spaces when the tab key is pressed
-   set expandtab
+   set noexpandtab
    " Shifting / (auto)indenting levels are in increments of 3 spaces
-   set shiftwidth=3
+   set shiftwidth=4
    " When shifting lines L or R (e.g. using '<' or '>'), round to the nearest
    " 'shiftwidth' multiple
    set shiftround
    set formatoptions+=cqlnj
-   set textwidth=78
+   set textwidth=90
+
+   set listchars+=tab:>-
 
    " Options for cindent
    " Don't indent a return type that is on its own line
