@@ -220,6 +220,8 @@ augroup END " }
    endif
    syntax enable
 
+   hi CursorLine     term=standout     cterm=bold                    ctermbg=darkgrey
+
    "}}}
 
 
