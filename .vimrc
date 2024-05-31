@@ -253,4 +253,9 @@ augroup END " }
 	let g:rustfmt_autosave = 1
    "}}}
 
+
+   " Configure fzf plugin {{{
+	let g:fzf_command_prefix = 'Fzf'
+   "}}}
+
 " vim:ft=vim:fdm=marker
