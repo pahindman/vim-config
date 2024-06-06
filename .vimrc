@@ -17,7 +17,7 @@ try
 
    call plug#begin()
 
-   Plug 'altercation/vim-colors-solarized'
+   Plug 'ericbn/vim-solarized'
    Plug 'junegunn/fzf.vim'
    Plug 'junegunn/fzf'
    Plug 'junegunn/vim-plug'
@@ -31,7 +31,6 @@ try
    Plug 'tpope/vim-surround'
    Plug 'tpope/vim-unimpaired'
    Plug 'vim-airline/vim-airline'
-   Plug 'vim-scripts/BlackBeauty'
    Plug 'weynhamz/vim-plugin-minibufexpl'
 
    if has('nvim-0.6') || has('patch-9.0.0185')
@@ -189,6 +188,7 @@ augroup END " }
    " Set syntax highlighting options {{{
    syntax clear
    set background=dark
+   set termguicolors
    "}}}
 
 
@@ -211,17 +211,8 @@ augroup END " }
    hi clear Directory
    hi Directory	  term=bold  cterm=bold  ctermfg=brown	guifg=Red
 
-   " Try colorschemes in reverse order of preference
-   silent! colorscheme blackbeauty
-
-   " For now only use solarized on MacOS X - on Windows and Linux with the
-   " default color mappings it looks really ugly
-   if has("macunix")
-      silent! colorscheme solarized
-   endif
+   silent! colorscheme solarized
    syntax enable
-
-   hi CursorLine     term=standout     cterm=bold                    ctermbg=darkgrey
 
    "}}}
 
