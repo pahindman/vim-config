@@ -50,9 +50,9 @@ let g:airline_section_z = "%p%% %l/%L:%c"
 
 " Auto-reload .[g]vimrc
 augroup reload_vimrc " {
-    autocmd!
-    autocmd BufWritePost $MYVIMRC source $MYVIMRC
-    autocmd BufWritePost $MYGVIMRC source $MYGVIMRC
+   autocmd!
+   autocmd BufWritePost $MYVIMRC source $MYVIMRC
+   autocmd BufWritePost $MYGVIMRC source $MYGVIMRC
 augroup END " }
 
    " Set window look-and-feel options {{{
@@ -244,12 +244,12 @@ augroup END " }
 
 
    " Configure rust plugin {{{
-	let g:rustfmt_autosave = 1
+   let g:rustfmt_autosave = 1
    "}}}
 
 
    " Configure fzf plugin {{{
-	let g:fzf_command_prefix = 'Fzf'
+   let g:fzf_command_prefix = 'Fzf'
    "}}}
 
 " vim:ft=vim:fdm=marker
