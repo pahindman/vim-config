@@ -31,6 +31,7 @@ try
    Plug 'tpope/vim-surround'
    Plug 'tpope/vim-unimpaired'
    Plug 'vim-airline/vim-airline'
+   Plug 'vim-airline/vim-airline-themes'
    Plug 'weynhamz/vim-plugin-minibufexpl'
 
    if has('nvim-0.6') || has('patch-9.0.0185')
