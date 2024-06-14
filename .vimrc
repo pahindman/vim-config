@@ -23,6 +23,7 @@ try
    Plug 'junegunn/vim-plug'
    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
    Plug 'rust-lang/rust.vim'
+   Plug 'shumphrey/fugitive-gitlab.vim'
    Plug 'tpope/vim-abolish'
    Plug 'tpope/vim-dispatch'
    Plug 'tpope/vim-fugitive'
