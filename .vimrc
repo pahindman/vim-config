@@ -56,6 +56,14 @@ augroup reload_vimrc " {
    autocmd BufWritePost $MYGVIMRC source $MYGVIMRC
 augroup END " }
 
+" Function to source only if file exists {
+function! SourceIfExists(file)
+  if filereadable(expand(a:file))
+    exe 'source' a:file
+  endif
+endfunction
+" }
+
    " Set window look-and-feel options {{{
 
    " Show information about commands that are in the process of being entered
@@ -252,5 +260,7 @@ augroup END " }
    " Configure fzf plugin {{{
    let g:fzf_command_prefix = 'Fzf'
    "}}}
+
+call SourceIfExists("~/.vimrc.local")
 
 " vim:ft=vim:fdm=marker
