@@ -1,11 +1,6 @@
 *
-!/.gitignore.d
 !/.gitignore.d/vim-config
 !/.gvimrc
-!/.vim
-!/.vim/colors
-!/.vim/ftdetect
-!/.vim/plugin
 !/.vimrc
 !/README.md
 !/UNLICENSE
