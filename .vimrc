@@ -20,6 +20,7 @@ try
    Plug 'ericbn/vim-solarized'
    Plug 'junegunn/fzf.vim'
    Plug 'junegunn/fzf'
+   Plug 'junegunn/vim-peekaboo'
    Plug 'junegunn/vim-plug'
    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
    Plug 'rust-lang/rust.vim'
