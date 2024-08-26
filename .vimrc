@@ -141,6 +141,10 @@ endfunction
    map <Leader>8 :grep -r <cword> *<CR>
    map <Leader><Leader>8 :grep -r -w <cword> *<CR>
 
+   if has('nvim-0.8')
+	  nnoremap <buffer> <silent> <leader>dq <cmd>lua vim.diagnostic.setloclist()<CR>
+   endif
+
    " easy editing
    if has("unix") || has("macunix")
       map <Leader>e :e <C-R>=expand("%:p:h")."/"<CR>
