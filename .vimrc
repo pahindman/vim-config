@@ -127,7 +127,13 @@ set hlsearch
 " use clipboard as the * register
 set clipboard=unnamedplus
 
-set grepprg=grep\ -n
+if !has('nvim')
+	if executable('rg')
+		set grepprg=rg\ --vimgrep\ -uu
+	else
+		set grepprg=grep\ -nH\ $*
+	endif
+endif
 "}}}
 
 
