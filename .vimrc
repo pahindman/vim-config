@@ -272,6 +272,7 @@ let g:rustfmt_autosave = 1
 
 " Configure fzf plugin {{{
 let g:fzf_command_prefix = 'Fzf'
+let g:fzf_layout = { 'tmux': '-p70%,60%', 'window': { 'width': 0.7, 'height': 0.6, 'relative': v:true } }
 "}}}
 
 call SourceIfExists("~/.vimrc.local")
