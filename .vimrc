@@ -243,16 +243,11 @@ syntax enable
 
 
 " Configure 'miniBufExplorer' plugin + key mappings + MBE highlighting {{{
-let g:miniBufExplCheckDupeBufs = 0
-let g:miniBufExplSplitBelow = 0
-"let g:miniBufExplMapCTabSwitchBufs = 1
-"let g:miniBufExplMapWindowNavArrows = 1
-let g:miniBufExplShowUnnamedBuffers = 1
-let g:miniBufExplModSelTarget = 1
+let g:miniBufExplBRSplit= 0
 let g:miniBufExplUseSingleClick = 1
 let g:miniBufExplTabWrap = 1
-let g:miniBufExplorerDebugMode  = 3
-let g:miniBufExplorerDebugLevel = 0
+let g:miniBufExplDebugMode = 3
+let g:miniBufExplDebugLevel = 0
 nnoremap <silent> <xF3> :MBEToggle<CR>
 nnoremap <silent> <F3>  :MBEToggle<CR>
 
