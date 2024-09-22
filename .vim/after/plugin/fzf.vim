@@ -8,3 +8,5 @@ nmap <Leader>fl  :FzfLines<CR>
 nmap <Leader>fm  :FzfMaps<CR>
 nmap <Leader>frg :FzfRG <C-R>=expand("<cword>")<CR><CR>
 nmap <Leader>ft  :FzfTags<CR>
+
+map <Leader><Leader>e :FzfFiles <C-R>=expand("%:p:h")."/"<CR><CR>
