@@ -27,6 +27,7 @@ try
 	Plug 'tpope/vim-commentary'
 	Plug 'tpope/vim-dispatch'
 	Plug 'tpope/vim-fugitive'
+	Plug 'tpope/vim-obsession'
 	Plug 'tpope/vim-repeat'
 	Plug 'tpope/vim-rhubarb'
 	Plug 'tpope/vim-sensible'
@@ -49,6 +50,7 @@ catch
 endtry
 
 let g:airline_symbols_ascii = 1
+let g:airline#extensions#obsession#enabled = 1
 
 " Auto-reload .[g]vimrc
 augroup reload_vimrc " {
