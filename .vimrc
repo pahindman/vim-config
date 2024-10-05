@@ -24,6 +24,7 @@ try
 	Plug 'junegunn/vim-plug'
 	Plug 'rust-lang/rust.vim'
 	Plug 'shumphrey/fugitive-gitlab.vim'
+	Plug 'tpope/vim-commentary'
 	Plug 'tpope/vim-dispatch'
 	Plug 'tpope/vim-fugitive'
 	Plug 'tpope/vim-repeat'
