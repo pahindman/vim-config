@@ -48,7 +48,7 @@ catch
 	echom "Couldn't use Vim-Plug, install it?"
 endtry
 
-let g:airline_section_z = "%p%% %l/%L:%c"
+let g:airline_symbols_ascii = 1
 
 " Auto-reload .[g]vimrc
 augroup reload_vimrc " {
