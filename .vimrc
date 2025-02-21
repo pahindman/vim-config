@@ -43,6 +43,11 @@ try
 	if has('nvim-0.8')
 		Plug 'neovim/nvim-lspconfig'
 	endif
+	if has('nvim-0.10')
+		Plug 'nvim-lua/plenary.nvim'
+		Plug 'nvim-treesitter/nvim-treesitter'
+		Plug 'olimorris/codecompanion.nvim'
+	endif
 
 	call plug#end()
 catch
