@@ -257,13 +257,6 @@ let g:miniBufExplDebugMode = 3
 let g:miniBufExplDebugLevel = 0
 nnoremap <silent> <xF3> :MBEToggle<CR>
 nnoremap <silent> <F3>  :MBEToggle<CR>
-
-hi link MBENormal               Normal
-hi link MBEChanged              WarningMsg
-hi link MBEVisibleNormal        Comment
-hi link MBEVisibleActive        Visual
-hi link MBEVisibleChanged       WarningMsg
-hi      MBEVisibleChangedActive term=standout ctermfg=Red ctermbg=Grey guifg=Red guibg=Grey
 "}}}
 
 
