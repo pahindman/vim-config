@@ -131,9 +131,6 @@ set smartcase
 " Highlight the search results
 set hlsearch
 
-" use clipboard as the * register
-set clipboard=unnamedplus
-
 if !has('nvim')
 	if executable('rg')
 		set grepprg=rg\ --vimgrep\ -uu
@@ -149,6 +146,9 @@ mapclear
 
 " Set the <Leader> to <Spc>
 let mapleader=" "
+
+" In Visual/Select mode, yank to the system clipboard using Y
+xnoremap Y "+y
 
 " Keys to grep for the word under cursor
 map <Leader>8 :grep -r <cword> *<CR>
