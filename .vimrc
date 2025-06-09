@@ -47,6 +47,7 @@ try
 		Plug 'nvim-lua/plenary.nvim'
 		Plug 'nvim-treesitter/nvim-treesitter'
 		Plug 'olimorris/codecompanion.nvim'
+		Plug 'lewis6991/gitsigns.nvim'
 	endif
 
 	call plug#end()
