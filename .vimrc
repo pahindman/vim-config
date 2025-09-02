@@ -36,6 +36,7 @@ try
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
 	Plug 'weynhamz/vim-plugin-minibufexpl'
+	Plug 'powerman/vim-plugin-AnsiEsc'
 
 	if has('nvim-0.6') || has('patch-9.0.0185')
 		Plug 'github/copilot.vim'
