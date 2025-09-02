@@ -22,6 +22,7 @@ try
 	Plug 'junegunn/fzf'
 	Plug 'junegunn/vim-peekaboo'
 	Plug 'junegunn/vim-plug'
+	Plug 'powerman/vim-plugin-AnsiEsc'
 	Plug 'rust-lang/rust.vim'
 	Plug 'shumphrey/fugitive-gitlab.vim'
 	Plug 'tpope/vim-commentary'
