@@ -47,8 +47,10 @@ try
 	if has('nvim-0.10')
 		Plug 'nvim-lua/plenary.nvim'
 		Plug 'nvim-treesitter/nvim-treesitter'
-		Plug 'olimorris/codecompanion.nvim'
 		Plug 'lewis6991/gitsigns.nvim'
+	endif
+	if has('nvim-0.11')
+		Plug 'olimorris/codecompanion.nvim'
 	endif
 
 	call plug#end()
