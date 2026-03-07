@@ -50,6 +50,7 @@ try
 		Plug 'lewis6991/gitsigns.nvim'
 	endif
 	if has('nvim-0.11')
+		Plug 'nvim-orgmode/orgmode'
 		Plug 'olimorris/codecompanion.nvim'
 	endif
 
