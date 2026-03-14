@@ -200,16 +200,6 @@ if has("autocmd")
 	" Also load indent files, to automatically do language-dependent indenting.
 	filetype plugin indent on
 
-	" Automatically remove trailing whitespace and \r when saving, but only if the
-	" buffer isn't binary
-	autocmd BufWritePre *
-	\  if( getbufvar(bufnr('%'), '&binary') == "nobinary" ) |
-	\		exe "normal m`"  |
-	\		:%s/[[:space:]\r]\+$//e  |
-	\		exe "noh"		 |
-	\		exe "normal g``" |
-	\  endif
-
 	" When editing a file, always jump to the last known cursor position.
 	" Don't do it when the position is invalid or when inside an event handler
 	" (happens when dropping a file on gvim).
