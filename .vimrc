@@ -102,8 +102,8 @@ set cursorline
 set tabstop=8
 " Insert a Tab character (not spaces) when the tab key is pressed
 set noexpandtab
-" Shifting / (auto)indenting levels are in increments of 4 spaces
-set shiftwidth=4
+" Shifting / (auto)indenting levels are in increments of 8 spaces
+set shiftwidth=8
 " When shifting lines L or R (e.g. using '<' or '>'), round to the nearest
 " 'shiftwidth' multiple
 set shiftround
