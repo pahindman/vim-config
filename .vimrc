@@ -98,8 +98,8 @@ set cursorline
 
 " Set tab & indent options {{{
 
-" Tabs count for 4 spaces
-set tabstop=4
+" Tabs count for 8 spaces
+set tabstop=8
 " Insert a Tab character (not spaces) when the tab key is pressed
 set noexpandtab
 " Shifting / (auto)indenting levels are in increments of 4 spaces
