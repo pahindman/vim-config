@@ -6,4 +6,3 @@ function! CreateFugitiveGrepKeyMappings() abort
 endfunction
 
 autocmd BufReadPost * call CreateFugitiveGrepKeyMappings()
-
